@@ -8,6 +8,10 @@ import OpenLayersMap from "vue3-openlayers";
 
 const app = createApp(App);
 
-app.use(OpenLayersMap);
+const options = {
+    debug: true,
+};
+
+app.use(OpenLayersMap, options);
 
 app.mount('#app')
